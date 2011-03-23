@@ -1,4 +1,4 @@
-# coding:utf-8 
+# encoding: utf-8 
 module WikiEngine
 
   class Retro < RedCloth::TextileDoc

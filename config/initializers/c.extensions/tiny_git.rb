@@ -1,3 +1,4 @@
+# encoding: utf-8
 module TinyGit
   module Caching
     class Middleware

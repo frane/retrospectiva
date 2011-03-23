@@ -1,1 +1,2 @@
-page.replace_html params[:element_id], markup(params[:content].to_s)
+# encoding: utf-8
+page.replace_html params[:element_id], markup(params[:content].to_s.force_encoding(Encoding::UTF_8).encode)

@@ -1,3 +1,4 @@
+# encoding: utf-8
 module FormatHelper
 
   def markup_with_wiki_words(text, options = {})

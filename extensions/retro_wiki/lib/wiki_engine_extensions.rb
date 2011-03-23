@@ -1,3 +1,4 @@
+# encoding: utf-8
 module WikiEngine
 
   class << self
@@ -19,11 +20,11 @@ module WikiEngine
     WIKI_WORD_PATTERN = /
       \[\[
         (?:(F|I)[|:])?
-        (\\?\w[ \w-]+)
-        (?:[|:]([A-Za-z].+?))?
+        (\\?\w[ ÄÖÜäöüß\w-]+)
+        (?:[|:]([:word:].+?))?
         (?:[|:](\d+(?:x|\W*\#215\W?)\d+))?
       \]\]
-    /x.freeze unless const_defined?(:WIKI_WORD_PATTERN)
+    /ux.freeze unless const_defined?(:WIKI_WORD_PATTERN)
     
     def wiki_word_pattern
       WIKI_WORD_PATTERN

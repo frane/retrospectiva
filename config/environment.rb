@@ -1,5 +1,9 @@
+# encoding: utf-8
 # Be sure to restart your server when you modify this file
 RETROSPECTIVA_VERSION = '2.0.0'
+
+Encoding.default_external = 'UTF-8'
+Encoding.default_internal = 'UTF-8'
 
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
